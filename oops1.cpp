@@ -140,7 +140,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 
@@ -189,4 +189,241 @@ int main(){
     Employee e1(101,"ajay",'m',88880,8);
 	e1.display();
 
+}*/
+
+
+
+
+
+
+
+
+
+
+// access specifier
+
+// normal function
+/*#include <iostream>
+using namespace std;
+class A{
+	private:
+		void f1(){
+			cout<<"this ia a function of class A";
+		}
+		
+		public:
+			void f2(){         // we can take acess of private memeber indirectly  with the help pf public()';
+				f1();
+			}
+};
+
+
+
+int main(){
+	A obj1;
+	obj1.f2();
+	
+}*/
+
+
+
+
+
+
+// function with data 
+
+/*#include <iostream>
+using namespace std;
+class A{
+	int num=90;
+	
+		
+		public:
+			void f(){  
+			       // we can take acess of private memeber indirectly  with the help pf public()';
+			 cout<<num;
+			}
+};
+
+
+
+int main(){
+	A obj1;
+	obj1.f();
+	
+}*/
+
+
+
+
+
+
+/*#include <iostream>
+using namespace std;
+
+
+class Great{
+	
+	private:
+		int n1,n2,n3;
+		public:
+			Great(){
+				
+			}
+			
+			Great(int a,int b,int c){
+				n1=a;
+				n2=b;
+				n3=c;
+			}
+			
+			void great(){
+				if(n1>n2  &&  n1>n3)
+				cout<<n1<<"is greatest";
+				
+				else if(n2>n1  &&  n2>n3)
+				cout<<n2<<"is greatest";
+				
+				else
+				cout<<n3<<"is greatest";
+		}
+		
+};
+
+
+int main(){
+
+    Great g(2,33,4);
+	g.great();
+
+}*/
+
+
+
+
+
+
+/*#include <iostream>
+using namespace std;
+
+
+class Great{
+     int n1,n2 ,n3;
+		public:
+			Great(){
+				cout<<"enter three numbers";
+				cout<<"enter first numbers";
+				cin>>n1;
+					cout<<"enter second numbers";
+				cin>>n2;
+					cout<<"enter thre numbers";
+				cin>>n3;
+				
+			}
+			
+			void display(){
+				if(n1>n2  &&  n1>n3)
+				cout<<n1<<"is greatest";
+				
+				else if(n2>n1  &&  n2>n3)
+				cout<<n2<<"is greatest";
+				
+				else
+				cout<<n3<<"is greatest";
+		}
+			
+};
+
+int main(){
+     Great g;
+	   g.display();
+	   
+
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class Largest{
+	
+	private:
+		int n1,n2,n3;
+		
+    public:
+    	Largest(){
+		
+    	cout<<"enter three numbers";
+    	cout<<"enter first number";
+    	cin>>n1;
+    	cout<<"enter second  number";
+    	cin>>n2;
+    	cout<<"enter third number";
+    	cin>>n3;
+    }
+    
+    void display(){
+    
+				if(n1>n2  &&  n1>n3)
+				cout<<n1<<"is greatest";
+				
+				else if(n2>n1  &&  n2>n3)
+				cout<<n2<<"is greatest";
+				
+				else
+				cout<<n3<<"is greatest";
+		}
+			
+	
+	
+};
+
+
+int main(){
+	Largest l;
+	l.display();
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+class Largest{
+	private:
+		int n1,n2,n3;
+	public:
+		
+		Largest(int a,int b,int c){
+			n1=a;
+			n2=b;
+			n3=c;
+		}
+		
+		void display(){
+				if(n1>n2  &&  n1>n3)
+				cout<<n1<<"is greatest";
+				
+				else if(n2>n1  &&  n2>n3)
+				cout<<n2<<"is greatest";
+				
+				else
+				cout<<n3<<"is greatest";
+			
+		}
+	
+	
+};
+
+
+int main(){
+	Largest l(2,3,4);
+	l.display();
 }
+
+
+
+
+
+
+
+

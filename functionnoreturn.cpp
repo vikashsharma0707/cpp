@@ -134,11 +134,11 @@ void add(int a,int b){       //function definition    // formal arguments
 	return sum;
 }
 int main(){
-     int x,y,result;
+     int a,b,result;
      cout<<"enter numbers";
-     cin>>x>>y;
+     cin>>a>>b;
 	                     //local decleration prototyoe
-	     result=add(x,y); 
+	     result=add(a,b); 
 		 cout<<"sum is"<<result; 
 		 return 0;                     // function call //actual arguments
 }

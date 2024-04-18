@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-	/int n,even,odd;
+	int n,even,odd;
 	
 	for(int i=0;i<=100;i++){
 	

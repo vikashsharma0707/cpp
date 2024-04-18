@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
- int main(){
+ /*int main(){
 	int n,sum,last,temp;
 	cout<<"enter number";
 	cin>>n;
@@ -18,11 +18,11 @@ using namespace std;
 	else
 	cout<<"composite number";
 	
-}
+}*/
 
 
 
-/*int main(){
+int main(){
 
 int n,sum,last;
 for(int i=100;i=900;i++){
@@ -38,4 +38,4 @@ for(int i=100;i=900;i++){
 		cout<<i<<" ";
 	
 }
-}*/
+}
