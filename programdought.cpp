@@ -15,17 +15,20 @@ class Bank{
 	
 	public:
 	   int amount;
-		
+		  
+		  Bank(){
+		  	amount=50;
+		  }
 		
 		void addamount(){
-		   int a=100;
-		    amount=50;
-		   cout<<amount+a<<endl;
+		   
+		    amount=amount+100;
+		   cout<<amount<<endl;
 		}
 		
 		void addamount(int b){
-			 amount=50;
-			cout<<amount+b;
+			 amount=amount+b;
+			cout<<amount;
 			
 		
 			
@@ -44,35 +47,7 @@ int main(){
 
 
 
-/*#include<iostream>
-using namespace std;
 
-int add(int n){
-	int i,rem,sum=0;
-	i=n;
-	while(n!=0){
-		rem=n%10;
-		sum=sum+rem*rem*rem;
-		n=n/10;
-	}
-	if(i==sum){
-	cout<<"number is armstrong";
-	}
-	else{
-		cout<<"number is not a armstrong number";
-	}
-	
-	
-}
-
-int main(){
-	int n,i,result;
-	cout<<"enter any number";
-	cin>>n;
-	 add(n);
-//	 result=add(n);
-		
-}*/
 
 
 

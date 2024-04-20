@@ -7,10 +7,7 @@ class Great{
 	private:
 		int n1,n2;
 		public:
-			Great(){
-				
-			}
-			
+		
 			Great(int a,int b){
 				n1=a;
 				n2=b;

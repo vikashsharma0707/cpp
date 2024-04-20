@@ -347,7 +347,7 @@ int main(){
 
 
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 
@@ -410,6 +410,92 @@ int main(){
 	g.rectangle();
 	g.prectangle();
 	g.triangle();
+}*/
+
+
+
+
+/*class Circle{
+	  private:
+	  	double radius;
+	  public:
+	  	
+	  	void add(){
+	  	 cout<<"Enter radius";
+	  	 cin>>radius;
+	  	 cout<<"area is "<<3.14*radius*radius;
+	  	 }
+	
+};
+
+int main(){
+	Circle c;
+	c.add();
+}*/
+
+
+
+
+
+/*class React{
+	   private:
+	   	int l,b;
+	   public:
+	   	   
+	   	
+	   	  void setter(){
+	   	  	cout<<"enter l and b";
+	   	  	cin>>l>>b;
+	   	  	
+	   	  	 area=l*b;
+	   	  	 
+			 }
+			 
+			
+			 
+			 
+			 
+	
+	
+	
+	
+	
+	
+};
+
+
+int main(){
+	React r;
+	r.setter();
+	r.getter();
+	
+}*/
+
+
+
+
+class React{
+	   private:
+	   	int l,b;
+	   public:
+	   	   
+	   	
+	   	  void setter(double a,double c){
+	   	  	l=a;
+	   	  	b=c;
+	   	  	cout<<"enter l and b";
+	   	  	cin>>l>>b;
+	   	  	
+	   	  	 int area=l*b;
+	   	  	 
+			 }	
+};
+
+
+int main(){
+	React r(double a,double c);
+	r.setter;
+	
 }
 
 

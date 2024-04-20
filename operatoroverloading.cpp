@@ -79,50 +79,33 @@ int main(){
 
 
 
-
-
-#include<iostream>
+// gretest number by operator overloading
+/*#include<iostream>
 using namespace std;
 
 class Student{
 	int marks;
-	int high;
  public:
  	Student (int a){
-// 	int marks;
       marks=a;
-      high=0;
 	 }
+	 
 	 
 	 void display(){
 	 	cout<<marks<<endl;
-	 	cout<<high<<endl;
 	 }
 	 
 	 
 	 Student operator +(Student ob){
 	 	Student temp(0);
+	 	if(marks>ob.marks)
+	 	    temp.marks=marks;
+	 	else
+	 	   temp.marks=ob.marks;
+	 	   return temp;
 	 	
-	 	temp.marks=marks+ob.marks;
-	 
-	 	return temp;
-	
+	 	
 	 }
-	 
-	 Student operator<(Student ob){
-	 		Student high;
-	 	if(marks>ob.marks  && marks>temp){
-	 		high=marks;
-		 }
-		 else if(ob.marks>marks  &&  ob.marks>temp){
-		 	high=ob.marks;
-		 }
-		 else{
-		      high=temp;
-		 }
-	 	return temp;
-	 }
-	 
 		
 	
 };
@@ -132,6 +115,193 @@ int main(){
 	Student s1(23),s2(67),s3(55),s4(90);
 	Student result = s1+s2+s3+s4;
 	
+	result.display();
+}*/
 
 
+
+
+
+// lowest number by operator overloading
+/*#include<iostream>
+using namespace std;
+
+class Student{
+	int marks;
+ public:
+ 	Student (int a){
+      marks=a;
+	 }
+	 
+	 
+	 void display(){
+	 	cout<<marks<<endl;
+	 }
+	 
+	 
+	 Student operator +(Student ob){
+	 	Student temp(0);
+	 	if(marks<ob.marks)
+	 	    temp.marks=marks;
+	 	else
+	 	   temp.marks=ob.marks;
+	 	   return temp;
+	 	
+	 	
+	 }
+		
+	
+};
+
+
+int main(){
+	Student s1(23),s2(67),s3(55),s4(90);
+	Student result = s1+s2+s3+s4;
+	
+	result.display();
+}*/
+
+
+
+
+
+
+// multiplication number by operator overloading
+/*#include<iostream>
+using namespace std;
+
+class Student{
+	int marks;
+ public:
+ 	Student (int a){
+      marks=a;
+	 }
+	 
+	 
+	 void display(){
+	 	cout<<marks<<endl;
+	 }
+	 
+	 
+	 Student operator *(Student ob){
+	 	Student temp(0);
+	 	temp.marks=marks*ob.marks;
+	 	return temp;
+	 
+	 	
+	 }
+		
+	
+};
+
+
+int main(){
+	Student s1(23),s2(67),s3(55),s4(90);
+	Student result = s1*s2*s3*s4;
+	
+	result.display();
+}*/
+
+
+
+
+// gretest number by operator overloading
+/*#include<iostream>
+using namespace std;
+
+class Student{
+	int marks;
+ public:
+ 	Student (int a){
+      marks=a;
+	 }
+	 
+	 
+	 void display(){
+	 	cout<<marks<<endl;
+	 }
+	 
+	 
+	 Student operator +(Student ob){
+	 	Student temp(0);
+	 	if(marks>ob.marks)
+	 	    temp.marks=marks;
+	 	else
+	 	   temp.marks=ob.marks;
+	 	   return temp;
+	 	
+	 	
+	 }
+		
+	
+};
+
+
+int main(){
+	Student s1(23),s2(67),s3(55),s4(90);
+	Student result = s1+s2+s3+s4;
+	
+	result.display();
+}*/
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+class Student{
+	int marks;
+ public:
+ 	/*Student (int a){
+      marks=a;
+	 }*/
+	 
+	 void react(){
+	 	cout<<"enter the marks";
+	 	cin>>marks;
+	 }
+	 
+	 
+	 void display(){
+	 	cout<<marks<<endl;
+	 }
+	 
+	 
+	 Student operator ++(){
+	 	marks=marks+10;
+	 	
+	 }
+		
+	
+};
+
+
+int main(){
+	Student s1;
+	s1.react();
+	s1.display();
+	++s1;
+	cout<<"original value ";
+	s1.display();
+	
+	
+	
 }
+	
+
+	
+
+
+
+
+
+
+
+
+// wap to overload prifix increment operator ++,such that it will increment the value of marks of a student by 10.
+// student s1(23);
+/*++s1;
+s1.display();*/
