@@ -59,7 +59,7 @@ class A{
 	 	int a;
 	 	
 	 	public:
-	 		void add(int x){
+	 		void setvalue(int x){
 	 			a=x;
 			 }	
 };
@@ -68,18 +68,16 @@ class B{
 	 protected:
 	 	int b;
 	 public:
-	 	 void addition(int y){
+	 	 void setvalue1(int y){
 	 	        b=y;
 		  }
-	
-	
 };
 
 
 class C:public A,public B{
 	public:
 		  int sum=0;
-		void result(int x,int y){
+		void result(){
 			sum=a+b;
 		}
 			
@@ -90,10 +88,10 @@ class C:public A,public B{
 };
 
 int main(){
-	C aa(2,3);
-	aa.add();
+	C aa;
+	aa.setvalue(4);
+	aa.setvalue1(5);
 	aa.result();
-	aa.addition();
 	aa.display();
 	
 }
