@@ -29,7 +29,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 class Add{
@@ -57,7 +57,7 @@ int main(){
 	Add aa(s,f);
 	aa.add();
 	aa.display();
-}
+}*/
 
 
 
@@ -93,3 +93,54 @@ int main() {
 
    return 0;
 }*/
+
+
+
+/*#include<iostream>
+using namespace std;
+
+class Add{
+	int a,b;
+	
+	public:
+		void add(int c,int d){
+			a=c;
+			b=d;
+		}
+		void display(){
+			cout<<"the sum of a and b is"<<a+b;
+		}
+};
+
+
+int main(){
+	Add aa;
+	aa.add(2,3);
+	aa.display();	
+}*/
+
+
+
+
+#include<iostream>
+using namespace std;
+class Add{
+	int a,b;
+	
+	public:
+		 Add(int c,int d){
+			a=c;
+			b=d;
+		}
+		void display(){
+			cout<<"the sum of a and b is"<<a+b;
+		}
+		
+		
+};
+
+
+int main(){
+	Add aa(2,3);
+	aa.display();
+}

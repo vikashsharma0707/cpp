@@ -1,14 +1,12 @@
 // static variable + static function
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 class Cybrom{
 	public:
 		string st_name,course;
 		static string institude_name;
-		
-		
-		
+				
 	public:
 		Cybrom(string n,string c){
 			st_name=n;
@@ -35,7 +33,103 @@ int main(){
 	
 	Cybrom::institude_name="Cybrom infotrch";
 	obj1.display();
+	obj2.display();	
+}*/
+
+
+
+
+
+
+// static variable + static function
+
+// change the address with help of class
+/*#include<iostream>
+using namespace std;
+
+class Cybrom{
+	private:
+		string st_name,course;
+		static string institude_name,address;
+		//static string address;
+				
+	public:
+		Cybrom(string n,string c){
+			st_name=n;
+			course =c;
+		}
+		
+		void display(){
+			cout<<"Institude name:"<<institude_name<<endl;
+			cout<<"name:"<<st_name<<endl;
+			cout<<"course:"<<course<<endl;
+			cout<<"address"<<address<<endl;
+		}
+		
+		static void changeinstitute(string n){
+			institude_name=n;	
+		}
+		
+		static void changeaddress(string a){
+		         address=a;	
+		}
+		
+
+};
+
+string Cybrom::institude_name="cybrom academy";
+string Cybrom::address= "bhopal";
+
+
+int main(){
+	Cybrom obj1("raj","phython"),obj2("rahul","java");
+	
+	obj1.display();
 	obj2.display();
 	
+	// obj1.institude_name="rgpv";     unhralthy coding
 	
+	//Cybrom::institude_name="Cybrom infotrch";
+	Cybrom::changeinstitute("cybrom infotech");
+	Cybrom::changeaddress("mpnagar");
+	obj1.display();
+	obj2.display();	
+}*/
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+
+class Student{
+	private:
+		static int count;
+		
+	public:
+		Student(){
+			count++;
+		}
+		
+		static void display_count(){
+			cout<<"total students:"<<count<<endl;
+		}
+};
+
+int Student::count;
+
+int main(){
+	Student s1,s2,s3;
+	Student s4,s5;
+	Student::display_count();
 }
+
+
+
+
+
+

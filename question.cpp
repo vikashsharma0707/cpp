@@ -8,7 +8,7 @@ class Person{
 	public:
 	 string name,address;
 	 
-	 Person(string n,string a){
+	 void display1(string n,string a){
 	 	name=n;
 	 	address=a;
 	 }
@@ -21,7 +21,7 @@ class Contact{
 		string email;
 		int contact;
 		
-		Contact(string e,int c){
+		void display2(string e,int c){
 			email=e;
 			contact=c;
 		}
