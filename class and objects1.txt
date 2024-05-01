@@ -1,0 +1,220 @@
+
+Object oriented programming
+===========================
+
+1>WAP to create a class  Book .
+#data member: int Bid,Quantity;
+#member function: parameterized_constructor(),void Purchase() 
+,void Sale(), void currentstock().
+# first user intitailized data members with input values.
+# purchase can add books quantity
+# sale can decremented books quantity.
+
+2>Write a class named Circle constructed by a radius and 
+two methods which will compute the area and the perimeter of a circle.
+
+#data member: double radius.
+#member function: parameterized_constructor(),void area() ,void perimeter(), void display().
+
+3)Write a  class named animal constructed by a name, no_legs, category
+(herbivores, carnivores and omnivores)and
+
+#private data member: name(string type),no_legs (int type),category(string type) (herbivores, carnivores and omnivores)
+detail(string type)
+
+private member function:
+    void set_detail()
+description:
+ 1)herbivores -> "animals that eat plants"
+ 2)carnivores -> "animals that eat only meat"
+ 3)omnivores -> "animals eat both plants and meat"
+  
+public 
+#member function: parameterized_constructor(name,legs,category)
+                  and call set_detail() inside it.
+                  all_details() -->display all
+                  category () -->display category
+Create some objects and display result.
+
+
+
+
+4>WAP to create a class  Resume .
+#data member: string name,double percentage10,double percentage12,double percentagedegree,bool currentlyworking,
+#member function: parameterized_constructor(),void update_percent() ,void update_name(), void display().
+
+5)WAP to create a class  Student . that accepts marks (out of 100)
+ of five subjects from user and calculate the 
+#private data member: 5 int variable, 1 double variable percentage,
+ 1 char variable Grade,student_name.
+calculate_grade()
+percentage >=60 Grade A
+percentage >=50 Grade B
+percentage >=40 Grade C
+percentage  <40 Grade D
+calculate_per()
+#member function: constructor()-->5 marks+calculate_per(),display_grade()
+
+6>WAP to create a class  Highest which can
+#find highest number amoung 3 numbers.
+#data member: int n1,n2,n3,high.
+#member function: parameterized_constructor(), highest()
+
+7>WAP to create a class  Swap which can
+#swap the value of 2 variable.
+#data member: int num.
+#member function: parameterized_constructor(), swap()
+
+8>WAP to create a class  Factorial which can
+#find the factorial of a num.
+#data member: int num.
+#member function: parameterized_constructor(), factorial()
+
+9>WAP to create a class Determiner 
+#data member: int num.
+#member function: parameterized_constructor(),palindrome(),armstrong().
+
+
+Inheritance
+============
+1>WAP to create a class  LowestHighest which can inherit class Highest(mentioned above)
+#find lowest number amoung 3 numbers.
+#with the help of parent class Highest.
+#data member: int low.
+#member function: parameterized_constructor()-->call parent constructor, lowest()
+
+
+2>WAP to create a class DeterminerExtend  which can inherit class Determiner(mentioned above)
+#data member: no.
+#member function: parameterized_constructor()-->call parent constructor,
+prime().
+
+3>WAP to create a class  StudentPersonal,which can inherit class Student(mentioned above)
+#data member: father_name,mother_name,aadhar
+#member function: parameterized_constructor()-->call parent constructor,
+# display_all().
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Example Inheritance 
+-----------------------------------------------------------------------------------------------
+Solved example 1.
+a)WAP to create a class named Person.
+#data member: name,age.
+#member function: parameterized_constructor(),display().
+
+b)WAP to create a class named Employee which can inherit Student.
+#data member: dep,desig.
+#member function:parameterized_constructor()-->call parent constructor,display().
+
+# include <iostream>
+using namespace std;
+
+class Person{
+    protected:
+        string name,age;
+    public:
+      Person(string n,string a){
+          name=n;
+          age=a;
+      }
+      void display(){
+             cout<<"name:"<<name<<"age"<<age<<endl;
+      }
+};
+class Employee:private Person{
+    protected:
+        string dep,desig;
+    public:
+      Employee(string a,string b,string d,string ds):Person(a, b){
+          dep=d;
+          desig=ds;
+      }
+      void display(){
+             cout<<"Employee depeartment:"<<name<<"designation:"<<desig<<endl;
+      }
+};
+
+int main()
+{
+Employee e("Human Resoursec","officer","ajay","22");
+e.display();
+
+}
+
+
+--------------------------------------------------------------------------------------------------
+Solved example 2.
+Implement a base class Worker with attributes name and salary. 
+Create a class Manager derived from both Worker and Contact.
+==================================================================================================
+
+#include <iostream>
+using namespace std;
+class Worker{
+  protected:
+    string name;
+    int salary;
+  public:
+     Worker(string n,int s){
+         name=n;
+         salary=s;
+     }
+  void  display(){
+         cout<<"name:"<<name<<"salary:"<<salary<<endl;
+     }
+};
+class Contact{
+    protected:
+      string address,mob;
+    public:
+     Contact(string a,string m){
+        address=a;
+        mob=m;
+     }
+   void display(){
+         cout<<"address:"<<address<<"mobile:"<<mob<<endl;
+     }
+};
+
+class Manager:public Worker,public Contact{
+     
+    public:
+      string duties;
+      Manager(string name,int sal,string add,string mob,string duty):
+       Worker(name,sal),Contact(add,mob){
+           
+           duties=duty;
+          
+      };
+    void  display(){
+         cout<<"name:"<<name<<"salary:"<<salary<<endl;
+          cout<<"address:"<<address<<"mobile:"<<mob<<endl;
+          cout<<"duties:"<<duties;
+    }
+};
+int main()
+{
+    Manager m("ajay",23000,"bhopal","9090909090","to manage operations");
+    m.display();
+}
+
+

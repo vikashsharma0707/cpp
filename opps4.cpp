@@ -2,10 +2,10 @@
 using namespace std;
  class Carengine{
  	public:
- 		int enginetype;
+ 		string enginetype;
 		int engineno;
  			
- 		Carengine(int a,int b){
+ 		Carengine(string a,int b){
 	      enginetype=a;
 	      engineno=b;
 		 }

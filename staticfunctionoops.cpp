@@ -97,11 +97,6 @@ int main(){
 }*/
 
 
-
-
-
-
-
 #include<iostream>
 using namespace std;
 
@@ -127,6 +122,21 @@ int main(){
 	Student s4,s5;
 	Student::display_count();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

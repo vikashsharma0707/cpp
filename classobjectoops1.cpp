@@ -136,6 +136,10 @@ class Add{
 			cout<<"the sum of a and b is"<<a+b;
 		}
 		
+		void display1(){
+			cout<<"substraction of two number is"<<a-b;
+		}
+		
 		
 };
 
@@ -143,4 +147,5 @@ class Add{
 int main(){
 	Add aa(2,3);
 	aa.display();
+	aa.display1();
 }

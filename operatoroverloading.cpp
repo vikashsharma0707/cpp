@@ -80,7 +80,7 @@ int main(){
 
 
 // gretest number by operator overloading
-/*#include<iostream>
+#include<iostream>
 using namespace std;
 
 class Student{
@@ -98,6 +98,8 @@ class Student{
 	 
 	 Student operator +(Student ob){
 	 	Student temp(0);
+	 	temp.marks=marks+ob.marks;
+	 	cout<<temp.marks;
 	 	if(marks>ob.marks)
 	 	    temp.marks=marks;
 	 	else
@@ -116,7 +118,7 @@ int main(){
 	Student result = s1+s2+s3+s4;
 	
 	result.display();
-}*/
+}
 
 
 
@@ -249,47 +251,7 @@ int main(){
 
 
 
-#include<iostream>
-using namespace std;
 
-class Student{
-	int marks;
- public:
- 	/*Student (int a){
-      marks=a;
-	 }*/
-	 
-	 void react(){
-	 	cout<<"enter the marks";
-	 	cin>>marks;
-	 }
-	 
-	 
-	 void display(){
-	 	cout<<marks<<endl;
-	 }
-	 
-	 
-	 Student operator ++(){
-	 	marks=marks+10;
-	 	
-	 }
-		
-	
-};
-
-
-int main(){
-	Student s1;
-	s1.react();
-	s1.display();
-	++s1;
-	cout<<"original value ";
-	s1.display();
-	
-	
-	
-}
 	
 
 	
