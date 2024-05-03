@@ -80,7 +80,7 @@ int main(){
 
 
 // gretest number by operator overloading
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 class Student{
@@ -118,7 +118,7 @@ int main(){
 	Student result = s1+s2+s3+s4;
 	
 	result.display();
-}
+}*/
 
 
 
@@ -208,7 +208,7 @@ int main(){
 
 
 // gretest number by operator overloading
-/*#include<iostream>
+#include<iostream>
 using namespace std;
 
 class Student{
@@ -244,22 +244,7 @@ int main(){
 	Student result = s1+s2+s3+s4;
 	
 	result.display();
-}*/
-
-
-
-
-
-
-
-	
-
-	
-
-
-
-
-
+}
 
 
 

@@ -1,0 +1,30 @@
+
+println linw will automatic change
+class DemoProgram{
+      
+      public static void main(String args[]){
+             System.out.println("Hello World");
+             System.out.println("This is java programming");
+        }
+    }
+
+
+
+print line automatic not change
+class DemoProgram{
+      
+      public static void main(String args[]){
+             System.out.print("Hello World");
+             System.out.print("/nThis is java programming");
+        }
+    }
+
+
+      printf line automatic not change
+    class DemoProgram{
+      
+      public static void main(String args[]){
+             System.out.printf("Hello World");
+             System.out.printf("/nThis is java programming");
+        }
+    }
