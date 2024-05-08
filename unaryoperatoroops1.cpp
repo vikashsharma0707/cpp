@@ -92,8 +92,6 @@ int main(){
 	s1++;
 	cout<<"updated marks ";
 	s1.display();
-	
-	
-	
+		
 }
 

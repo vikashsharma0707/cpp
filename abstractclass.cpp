@@ -49,7 +49,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 
@@ -89,6 +89,130 @@ int main(){
 	Media *r=new Viedeo;
 	r->play();
 	
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+
+class Media{
+	
+	public:
+		virtual void play()=0;
+	
+	void med(){
+		cout<<"play music";
+	}
+};
+
+class Audio:public Media{
+	public:
+		void play(){
+			cout<<"this is play class"<<endl;
+		}
+		
+		void display(){
+			cout<<"this is display audio"<<endl;
+		}
+	
+};
+
+
+
+class Music:public Media{
+	public:
+		void play(){
+			cout<<"this is music class"<<endl;
+		}
+		
+		void display1(){
+			cout<<" this display music class"<<endl;
+		}
+	
+};
+
+
+
+int main(){
+	Media *p= new Audio;
+	p->play();
+	
+	Media *a= new Music;
+	a->play();
+	
+	/*Audio aa;
+	aa.play();
+	aa.display();
+	
+	Music bb;
+	bb.play();
+	bb.display1();
+
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+
+class Add{
+	public:
+		virtual void Addition()=0;
+		virtual void Substraction()=0;	
+		
+		void diaplay(){
+			cout<<"addition of two number is:"<<endl;
+		}
+};
+
+
+class Add1:public Add{
+	public:
+		void Addition(){
+			cout<<"this add1 class"<<endl;
+		}
+		
+			void Substraction(){
+			cout<<"this substraction class"<<endl;
+		}
+	
+};
+
+
+
+class Add2:public Add{
+	public:
+		void Addition(){
+			cout<<"this add1 class"<<endl;
+		}
+		
+			void Substraction(){
+			cout<<"this substraction class"<<endl;
+		}
+	
+};
+
+
+
+int main(){
+	/*Add1 aa;
+	aa.Addition();
+	aa.Substraction();
+	
+	Add2 bb;
+	bb.Addition();
+	bb.Substraction();*/
+	
+	Add *a =new Add1;
+	a->Addition();
+	a->Substraction();
+	a->diaplay();
+	
+	Add *p = new Add2;
+	p->Addition();
+	p->Substraction();
+	p->diaplay();
 }
 
 

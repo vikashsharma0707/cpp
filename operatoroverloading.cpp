@@ -208,7 +208,7 @@ int main(){
 
 
 // gretest number by operator overloading
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 class Student{
@@ -243,6 +243,74 @@ int main(){
 	Student s1(23),s2(67),s3(55),s4(90);
 	Student result = s1+s2+s3+s4;
 	
+	result.display();
+}*/
+
+/*#include<iostream>
+using namespace std;
+
+class Add{
+	int a;
+     
+     public:
+	Add(int b){
+		a=b;
+	}
+	
+	void display(){
+		cout<<"a"<<a<<endl;
+	}
+	
+	Add operator +(Add &obj){
+		Add temp(0);
+		temp.a=a+obj.a;
+		return temp;
+	}
+};
+
+int main(){
+	Add s1(22),s2(23);
+	Add result=s1+s2;
+	result.display();
+}*/
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+class Add{
+	int a;
+	
+	public:
+		Add(int b){
+			a=b;
+		}
+		
+		void display(){
+			cout<<"higest is"<<a;
+		}
+		
+		
+		Add operator +(Add &obj){
+			Add temp(0);
+			if(a>obj.a){
+				temp.a=a;
+			}
+			
+			else{
+				temp.a=obj.a;
+			}
+			
+			return temp;
+		}
+};
+
+int main(){
+	Add s1(23),s2(24);
+	Add result=s1+s2;
 	result.display();
 }
 

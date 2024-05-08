@@ -32,10 +32,64 @@ int main(){
 
 
 
+/*#include<iostream>
+using namespace std;
+
+class Add{
+	
+	int a,b;
+	
+	public:
+		Add(){
+			cout<"enter two number";
+			cin>>a>>b;
+		}
+		
+		void add(){
+			cout<<"addition of two number is "<<a+b;
+		}
+};
+
+int main(){
+	Add aa;
+	aa.add();
+}*/
+
+
+#include<iostream>
+using namespace std;
+
+class Add{
+	int a,b;
+	  
+	  
+	  public:
+	  	Add(int c,int d){
+	  		a=c;
+	  		b=d;
+		  }
+		  
+		void display(){
+			cout<<"addition of two number is"<<a+b;
+		}
+	
+	
+	
+};
+
+int main(){
+	Add aa(2,3);
+	aa.display();
+}
+
+
+
+
+
 
 
 // parameter constructor with numbers and taking numbers from user
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 class Add{
@@ -64,7 +118,7 @@ class Add{
 int main(){
 	/*Add aa(2,3);
 	aa.add();
-	aa.display();*/
+	aa.display();
 	
 	
 	int x,y;
@@ -74,4 +128,4 @@ int main(){
 	Add aa(x,y);
 	aa.add();
 	aa.display();
-}
+}*/
